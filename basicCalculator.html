@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    /*      11 - Write a calculator program 
+            using swich case for two operands
+            functionalities - 
+            Addition
+            Sabtraction
+            multiplication
+            division
+            remider
+            factorial
+            percentage
+            average of two numbers
+            print multiplaction table of given number
+    */
+
+    
+    let char = prompt("Enter +,-,*,/,%,p,f,a: ");
+    switch(char){
+        case '+':
+                let num1 = +prompt("Enter the first number: ");
+                let num2 = +prompt("Enter the second number: ");
+                alert("Addition of "+num1+" and "+num2+" is "+(num1+num2));
+                break;
+        case '-':  
+                let num3 = +prompt("Enter the first number: ");
+                let num4 = +prompt("Enter the second number: ");
+                alert("Substraction of "+num3+" and "+num4+" is "+(num3-num4));
+                break;
+        case '*': 
+                let num5 = +prompt("Enter the first number: ");
+                let num6 = +prompt("Enter the second number: ");
+                alert("Multiplication of "+num5+" and "+num6+" is "+(num5*num6));
+                break;
+        case '/': 
+                let num7 = +prompt("Enter the first number: ");
+                let num8 = +prompt("Enter the second number: ");
+                alert("Quotation of "+num7+" and "+num8+" is "+(num7/num8));
+                break;
+        case '%': 
+                let num9 = +prompt("Enter the first number: ");
+                let num10 = +prompt("Enter the second number: ");
+                alert("Remainder "+num9+" and "+num10+" is "+(num9+num10));
+                break;
+        case 'p': 
+                let per1 = +prompt("Enter the first number: ");
+                let per2 = +prompt("Enter the second number: ");
+                alert("Percentage of "+per1+" and "+per2+" is "+(per1+per2/100));
+                break;
+        case 'f': 
+                let fact = 1;
+                let num = +prompt("Enter the number: ");
+                for(let i=1;i<=num;i++){
+                    fact += fact*1;
+                }
+                alert("The factorial of "+num+" is "+fact);
+                break;
+        case 'a': 
+                let avg1 = +prompt("Enter the first number: ");
+                let avg2 = +prompt("Enter the second number: ");
+                alert("The average of "+avg1+" and "+avg2+" is "+(avg1+avg2/2));
+                break;
+        default: 
+            alert("Invalid input try again....");
+    }
+
+    </script>
+</body>
+</html>
